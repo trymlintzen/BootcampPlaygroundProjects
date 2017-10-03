@@ -42,7 +42,8 @@ extension String {
 // if let dictionary1 = itemsDictionary!["PraxisItemsForSale"] as? NSArray {
     // print(itemsDictionary)
 
-if let itemsDictionary = itemsJSONString.parseJSONString as? NSDictionary,
+
+if let itemsDictionary = itemsJSONString.parseJSONString as? NSDictionary, // optional binding
     let status = itemsDictionary["status"] as? Bool,
     let message = itemsDictionary["message"] as? String,
     let data = itemsDictionary["data"] as? NSArray {
