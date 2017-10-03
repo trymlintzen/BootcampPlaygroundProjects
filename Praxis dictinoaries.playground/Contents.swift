@@ -33,6 +33,7 @@ extension String {
 }
 
 let itemsDictionary = itemsJSONString.parseJSONString as? NSDictionary
+// Optional binding "if let" schrijven, waardoor je geen ! hoeft te schrijven en dus niet forceerd
 if let praxisItemsForSale = itemsDictionary!["PraxisItemsForSale"] as? NSArray {
     print(itemsDictionary)
     for item in praxisItemsForSale {
