@@ -74,3 +74,34 @@ default:
 }
 print (errorString)
 
+// enum opzoeken in het boek
+
+
+
+// ENUM
+// stenen hieronder is goed voorbeeld, omdat er een limited aantal kleuren stenen zijn.
+
+enum Stones {
+    case Red
+    case Blue
+    case Green
+    case Purple
+}
+
+var find: Stones = Stones.Red
+var message2: String
+
+switch find {
+case .Red:
+    message2 = "you found it"
+case .Blue:
+    message2 = "wrong"
+case .Green:
+    message2 = "wrong again"
+case .Purple:
+    message2 = "bad"
+
+}
+// geen default, omdat er niet meer kleuren stenen zijn. Met intergers (getallen) zijn er meer.
+
+print(message2)
