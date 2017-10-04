@@ -46,7 +46,7 @@ names.remove(at: 0)       // verwijderd de eerste index en schuift alles op
 
 names[0] = "Tim"          // veranderd de array 0 in Tim
 
-for (index, name) in names.enumerated() {
+for (index, name) in names.enumerated() {   // enumerated zorgt dat nummber vanaf 0 (index) en name geteld worden
     print("\(index): \(name)")
 }
 

@@ -44,7 +44,6 @@ print(movieRating)
 movieRating.updateValue(7, forKey: "Interstellar")
 print(movieRating)
 
-// Exercise 2
 
 
 
