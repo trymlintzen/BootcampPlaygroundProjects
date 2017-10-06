@@ -2,32 +2,25 @@
 
 import UIKit
 
-
-func disemvowel(s: String) -> String {
-    return s.replacingOccurrences(of: "[aeoiu]", with: "")
+func disemVow (giveASetence sentence: String) -> String {
+//    var sentence = "Hello how are you"
+    var disemVowelWorld = ""
+    for letter in sentence {
+        switch letter {
+        case "a", "A", "e", "E", "i", "I", "o", "O", "u", "U" :
+            break
+        default:
+            disemVowelWorld.append(letter)
+        }
+//        print(disemVowelWorld)
     
-//    var result = ""
-//
-//    var vowel = ["a", "e", "i","o", "u"]
-//    for letter in vowel {
-//        s.replacingOccurrences(of: "a", with: "")
-//
-//        switch letter {
-//        case "a":
-//            result = s.replacingOccurrences(of: "a", with: "")
-//        case "e":
-//            result = ""
-//        case "i":
-//            result = ""
-//        case "o":
-//            result = s.replacingOccurrences(of: "o", with: "")
-//        case "u":
-//            result = ""
-//        default:
-//            break
-//        }
-    }
-    return result
 }
+    return (disemVowelWorld)
+    }
+    
+disemVow(giveASetence: "Hello world")
 
-disemvowel(s: "hallo")
+
+
+
+

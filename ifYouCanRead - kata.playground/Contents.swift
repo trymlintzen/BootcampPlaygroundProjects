@@ -19,10 +19,10 @@ func toNato(aSetence: String) -> String {
     var result: String = ""
 
     // Put all letters in the string to a lowercase, so that it matches keys in our dictionary
-    let lowercased = aSetence.lowercased()
+    let lowercasedASetence = aSetence.lowercased()
 
     // for loop to loop through everey character in our string that we want to convert
-    for char in lowercased.characters {
+    for char in lowercasedASetence.characters {
 
         // optional bindingc chekcing that we can get a value from our dictonary with the key "letter", which is the current character in the string that we are looping through
         if let word = natoAlphabet[char] {
@@ -46,7 +46,7 @@ func deleteSpace (newSetence: String) -> String {
     return components.filter { !$0.isEmpty }.joined(separator: " ")
 }
 
-toNato(aSetence:  "Hello this is cool")
+toNato(aSetence:  "go for it!")
 toNato(aSetence:  "My name      is Trym")
 
 
